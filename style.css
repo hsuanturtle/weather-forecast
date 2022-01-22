@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  background-image: fixed;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+  font-family: "Gemunu Libre", sans-serif;
+  font-size: 5rem;
+  padding: 0 10px;
+  position: absolute;
+  left: 1rem;
+  color: #fff;
+}
+.search-bar {
+  padding: 1rem 10rem 1rem 1rem;
+  border: none;
+  border-bottom: 2px solid #999;
+  font-size: 1.5rem;
+  margin-left: 5rem;
+  background-color: transparent;
+}
+.search-bar:focus {
+  border: none;
+
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+.search-bar,
+select,
+textarea {
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.submit {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  position: absolute;
+  right: 23rem;
+  color: #999;
+  border: none;
+  cursor: pointer;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-now {
+  box-shadow: 5px 5px 20px rgba(225, 225, 225, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 60vh;
+  width: 50%;
+  margin-top: 3rem;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 3rem;
+  color: #fff;
+}
+.location {
+  font-size: 3rem;
+}
+.temp,
+.description,
+.icon,
+.feel,
+.humidity {
+  font-size: 2rem;
+  margin: 5px;
+}
+.weather-des {
+  display: flex;
+  align-items: center;
+}
