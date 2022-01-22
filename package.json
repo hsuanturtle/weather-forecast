@@ -2,7 +2,7 @@
   "name": "forecast",
   "version": "1.0.0",
   "description": "Forecast Application",
-  "main": "index.html",
+  "main": "script.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
