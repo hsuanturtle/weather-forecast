@@ -31,6 +31,7 @@ header {
   font-size: 1.5rem;
   margin-left: 5rem;
   background-color: transparent;
+  position: relative;
 }
 .search-bar:focus {
   border: none;
@@ -86,4 +87,45 @@ section {
 .weather-des {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .submit {
+    right: 5%;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+  }
+  .logo {
+    display: none;
+  }
+  .search-bar {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .submit {
+    right: 5%;
+  }
+  .weather-now {
+    width: 70%;
+  }
+  .location {
+    font-size: 2rem;
+  }
+  .temp,
+  .description,
+  .icon,
+  .feel,
+  .humidity {
+    font-size: 1.5rem;
+  }
 }
